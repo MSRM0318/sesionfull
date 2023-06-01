@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSRM FT PETUCHE</title>
+</head>
+<body>
+  <ul>
+    <li><a href="https://msrm0318.github.io/sesion1y2marlon/" data-text="MSRM">SESIONES</a></li>
+    <li><a href="https://msrm0318.github.io/sesion1y2petuche/" data-text="PETUCHE">SESIONES</a></li>
+
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+}
+ul{
+	position: relative;
+}
+ul li{
+	list-style: none;
+	text-align: center;
+}
+ul li a{
+	color: #c6ad2e;
+	text-decoration: none;
+	font-size: 3em;
+	padding: 5px 20px;
+	display: inline-flex;
+	font-weight: 700;
+	transition: 0.5s;
+}
+ul:hover li a{
+	color: rgba(255, 204, 0, 0.351);
+}
+ul li:hover a {
+	color: #ffffff;
+	background: rgba(255, 255, 255, 0.193);
+	border-radius: 60px;
+}
+
+ul li a:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	color: rgba(0, 0, 0, .1);
+	border-radius: 50%;
+	z-index: -1;
+	opacity: 0;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 500px;
+	transition: letter-spacing 0.5s, left 0.5s;
+}
+ul li a:hover:before{
+	content: attr(data-text);
+	opacity: 1;
+	left: 50%;
+	letter-spacing: 10px;
+	width: 1800px;
+	height: 1800px;
+}
+ul li:nth-child(6n+1) a:before{
+	background: #ff0000;
+}
+ul li:nth-child(6n+2) a:before{
+	background: #ff40f2;
+}
+
+    </style>
+
+
+
+    <Script>
+		 alert('¡MSRM FT PETUCHE SESION 1 Y 2!');
+
+        var tit = document.title;
+var c = 0;
+function writetitle()
+{
+    document.title = tit.substring(0,c);
+    if(c==tit.length)
+{
+
+    c = 0;
+    setTimeout("writetitle()", 1000)
+}
+
+else
+{
+    c++;
+    setTimeout("writetitle()", 200)
+}
+}
+
+writetitle()
+    </Script>
+
+  </ul>
+</body>
+</html>
